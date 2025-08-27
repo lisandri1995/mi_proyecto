@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="UTF-8">
+        <title>Formularios en htmlcon varios atributos </title>
+    </head>
+    <body>
+      <h1>Formularios con atributos</h1>
+      <h2>Solo lectura</h2>
+        <form>
+
+            <label for="nombre">Nombre: </label> 
+            <input type="text" id="nombre" name="nombre"readonly><br><br>
+            <label for="apellido"> Apellido: </label> 
+            <input type="text" id="apellido" name="apellido"><br><br>
+            <input type="submit" value="Enviar datos">
+
+        </form>
+
+         <hr>
+
+         <h2>Desahaqbilitar campo</h2>
+
+        <form>
+            <label for="nombre">Nombre: </label> 
+            <input type="text" id="nombre" name="nombre" disabled><br><br>
+            <label for="apellido"> Apellido: </label> 
+            <input type="text" id="apellido" name="apellido"><br><br>
+            <input type="submit" value="Enviar datos">
+        </form>
+
+         <hr>
+
+         <h3>Asignar valor por defecto</h3>
+
+         <form>
+
+            <label for="nombre">Nombre: </label> 
+            <input type="text" id="nombre" name="nombre" value="Lisandri"><br><br>
+            <label for="apellido"> Apellido: </label> 
+            <input type="text" id="apellido" name="apellido" value="Arrua"><br><br>
+            <input type="submit" value="Enviar datos">
+         </form>
+
+         <hr>
+
+         <h4>Cambiar el tamño del imput</h4>
+
+         <form>
+
+            <label for="nombre">Nombre: </label> 
+            <input type="text" id="nombre" name="nombre" size="50"><br><br>
+            <label for="apellido"> Apellido: </label> 
+            <input type="text" id="apellido" name="apellido" size="80"><br><br>
+            <input type="submit" value="Enviar datos">
+         </form>
+     
+         <hr>
+
+         <h4>Establecer valores max y min para los inpust</h4>
+
+         <form>
+
+            <label for="nombre">Nombre: </label> 
+            <input type="text" id="nombre" name="nombre" minlength="5" maxlength="10"><br><br>
+            <label for="apellido"> Apellido: </label> 
+            <input type="text" id="apellido" name="apellido" maxlength="5"><br><br>
+            <input type="submit" value="Enviar datos">
+         </form>
+
+         <hr>
+
+         <h5>Establecer valores max y min para los input </h5>
+
+         <form>
+
+            <label for="fecha1">Fecha1: </label> 
+            <input type="date" id="datemax" name="datemax" max="2000-01-01"><br><br>
+            <label for="fecha2"> Fecha2: </label> 
+            <input type="date" id="datemin" name="datemin" min="2025-01-01"><br><br>
+            <input type="submit" value="Enviar datos">
+            <label for="número"> Nro: </label>
+            <input type="número" id="nro" name="nro" min="1" max="5"></label>
+         </form>
+
+         <hr>
+
+         <h6>Subir archivos</h6>
+
+         <form>
+
+            <label for="archivo">Subir archivo: </label> 
+            <input type="file" id="archivo" name="archivo" multiple><br><br>
+           
+         </form>
+
+         <hr>
+
+         <h7>Seguir un patrón de entrada</h7>
+
+         <form>
+
+            <label for="archivo">Archivo alfabético: </label> 
+            <input type="text" id="siglas" name="siglas" pattern="[a-az-Z]{3}" title="Ingrese solamente 3 letras"><br><br>
+           
+            <label for="telefono">Nro de celular: </label> 
+            <input type="tel" id="telefono" name="telefeono" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder="0971-000-123"><br><br>
+         
+         </form>
+
+         <hr>
+          <h8>Campos requeridos y foco</h8>
+         <form>
+            <label for="nombre">Nombre: </label> 
+            <input type="text" name="nombre" required><br><br>
+             <label for="apellido"> Focus</label> 
+            <input type="text" name="apellido"> autofus<br><br>
+         </form>
+         <hr>
+
+           <h9>Listar</h9>
+         <form>
+            <label for="nombre">Nombre: </label> 
+            <input list="navegadores">
+            <datalist id="navegadores">
+                <option value="mozilla firefox">
+                <option value="Opera">
+                <option value="Chrome">
+                <option value="Thor">
+            </datalist>
+         
+         </form>
+         <hr>
+          <h8>Autocompletar</h8>
+         <form>
+            <label for="nombre">Nombre: </label> 
+            <input type="text" name="nombre" autocomplete="off"><br><br>
+             <label for="apellido"> Focus</label> 
+            <input type="text" name="apellido" autocomplete="on"><br><br>
+         </form>
+    </body>
+</html>
+
+
